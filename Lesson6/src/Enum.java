@@ -65,15 +65,11 @@ enum Days {
     }
 
     public boolean isWorkingDay() {
-        boolean isWorkingDay2;
-        isWorkingDay2 = isWorkingDay;
-        return isWorkingDay2;
+        return isWorkingDay;
     }
 
     public boolean isWeekend() {
-        boolean isWeekend;
-        isWeekend = !isWorkingDay;
-        return isWeekend;
+        return !isWorkingDay;
     }
 
     public static Collection<Days> getWorkingDays() {
