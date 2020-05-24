@@ -1,23 +1,30 @@
 public class CarTester {
     public static void main(String[] args) {
-        FuelCar car1 = new FuelCar("Vaz", "1");
-        ElectricCar car2 = new ElectricCar("Nissan", "Leaf");
-        HybridCar car3 = new HybridCar("Toyota", "Prius");
+        FuelCar fuelCar = new FuelCar("Vaz", "2101");
+        ElectricCar electricCar = new ElectricCar("Nissan", "Leaf");
+        HybridCar hybridCar = new HybridCar("Toyota", "Prius");
+        FuelCar fuelCar2 = new FuelCar("Ford", "Focus");
 
-        Car[] arrayOfCars = {car1, car2, car3};
+
+        Car[] arrayOfCars = {fuelCar, electricCar, hybridCar, fuelCar2};
         for (Car car : arrayOfCars) {
-            if (car instanceof FuelCar) {
-                ((FuelCar) car).tank();
+            if (car instanceof Tankable) {
+                ((Tankable) car).tank();
+                System.out.println(car.getManufacturer() + " " + car.getModel() + " will be tanked!");
             }
-            if (car instanceof ElectricCar) {
-                ((ElectricCar) car).charge();
+            if (car instanceof Chargable) {
+                ((Chargable) car).charge();
+                System.out.println(car.getManufacturer() + " " + car.getModel() + " will be charged!");
+
             }
+
 
         }
-
-
     }
+
+
 }
+
 
 
 

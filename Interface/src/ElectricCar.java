@@ -6,6 +6,6 @@ class ElectricCar extends Car implements Chargable {
 
     @Override
     public void charge() {
-        System.out.println("Car will be charged");
+
     }
 }
