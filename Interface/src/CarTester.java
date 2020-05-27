@@ -10,11 +10,10 @@ public class CarTester {
         for (Car car : arrayOfCars) {
             if (car instanceof Tankable) {
                 ((Tankable) car).tank();
-                System.out.println(car.getManufacturer() + " " + car.getModel() + " will be tanked!");
+
             }
             if (car instanceof Chargable) {
                 ((Chargable) car).charge();
-                System.out.println(car.getManufacturer() + " " + car.getModel() + " will be charged!");
 
             }
 
