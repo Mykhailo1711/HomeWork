@@ -7,14 +7,14 @@ class HybridCar extends Car implements Tankable, Chargable {
 
     @Override
     public void charge() {
-        System.out.println("Car will be charged!");
+        System.out.println(" Car "+ getManufacturer() +  getModel() +" will be charged!");
 
 
     }
 
     @Override
     public void tank() {
-        System.out.println("Car will be tanked!");
+        System.out.println(" Car "+ getManufacturer() +  getModel() +" will be tanked!");
 
 
     }
