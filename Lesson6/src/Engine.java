@@ -3,7 +3,7 @@ import java.io.CharArrayReader;
 public class Engine {
     private String name;
     private int horsepower;
-    private  int capacity;
+    private int capacity;
     private boolean isStarted = false;
 
     public Engine(String name, int horsepower, int capacity) {
@@ -24,22 +24,24 @@ public class Engine {
     public int getCapacity() {
         return capacity;
     }
-public boolean getStarted(){
+
+    public boolean getStarted() {
         return isStarted;
-}
+    }
+
     public void start() {
 
         if (!isStarted) {
 
             isStarted = true;
 
-            System.out.println("Car  is starting " +getName()+ " engine");
+            System.out.println("Car  is starting " + getName() + " engine");
 
             System.out.println(getName() + " engine has been started ");
 
         } else {
 
-            System.out.println(getName() + " engine has been started already " );
+            System.out.println(getName() + " engine has been started already ");
 
         }
 
@@ -49,7 +51,7 @@ public boolean getStarted(){
 
         if (!isStarted) {
 
-            System.out.println(getName() + " engine has been stopped already  " );
+            System.out.println(getName() + " engine has been stopped already  ");
 
         } else {
 
